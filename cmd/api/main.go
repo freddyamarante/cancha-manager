@@ -9,8 +9,8 @@ import (
 func main() {
 	http.HandleFunc("/", handleRoot)
 
-	log.Println("Server starting on :8080")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	log.Println("Server starting on :9090")
+	if err := http.ListenAndServe(":9090", nil); err != nil {
 		log.Fatal(err)
 	}
 }
